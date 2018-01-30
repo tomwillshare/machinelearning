@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+      <link rel="stylesheet" href="main.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.7/xlsx.core.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/xls/0.7.4-a/xls.core.min.js"></script>
+      <script type="text/javascript" src="ExportToTable.js"></script>
+  </head>
+
+  <body>
+
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+  </table>
+
+    <input type="file" id="excelfile" />
+       <input type="button" id="viewfile" value="Existing Data" onclick="ExportToTable()" accept=".xlsx, .xls, .csv"/>
+          <br />
+          <br />
+       <table id="exceltable">
+    </table>
+
+    <input type="file" id="excelfile" />
+       <input type="button" id="viewfile" value="New Data" onclick="ExportToTable()" accept=".xlsx, .xls, .csv"/>
+          <br />
+          <br />
+       <table id="exceltable">
+    </table>
+
+    <form action = "machinelearn.py" method = "POST">
+       <input type = "submit" value = "Run the Program!!!">
+    </form>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="ExportToTable.js"></script>
+
+  </body>
+</html>
